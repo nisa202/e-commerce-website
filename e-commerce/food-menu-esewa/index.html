@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🍽️ Food Menu</h1>
+      <nav>
+        <button onclick="filterMenu('all')">All</button>
+        <button onclick="filterMenu('salad')">salad</button>
+        <button onclick="filterMenu('noodles')">noodles</button>
+        <button onclick="filterMenu('pizza')">Pizza</button>
+        <button onclick="filterMenu('snacks')">Snacks</button>
+        <button onclick="filterMenu('drinks')">drinks</button>
+        <button onclick="filterMenu('icecream')">Ice Cream</button>
+        <button onclick="filterMenu('momo')">momo</button>
+        <button onclick="filterMenu('chatpate')">chatpate</button>
+      </nav>
+    </header>
+
+    <!-- <main class="menu"> -->
+      <!-- Example Food Items -->
+      <div class="menu-item momo">
+        <img src="images/salad.png" alt="Salad" />
+        <h3>Momo</h3>
+        <p>₨120.00</p>
+        <button onclick="payEsewa('salad', 120)">Buy</button>
+      </div>
+
+      <div class="menu-item chowmein">
+        <img src="images/noodles.png" alt="Noodles" />
+        <h3>Chowmein</h3>
+        <p>₨100.00</p>
+        <button onclick="payEsewa('noodles', 100)">Buy</button>
+      </div>
+
+      <div class="menu-item pizza">
+        <img src="images/pizza.png" alt="Pizza" />
+        <h3>Pizza</h3>
+        <p>₨250.00</p>
+        <button onclick="payEsewa('Pizza', 250)">Buy</button>
+      </div>
+
+      <div class="menu-item snacks">
+        <img src="images/chatpate" alt="Chatpate" />
+        <h3>Chatpate</h3>
+        <p>₨50.00</p>
+        <button onclick="payEsewa('Chatpate', 50)">Buy</button>
+      </div>
+
+      <div class="menu-item drinks">
+        <img src="images/drinks.png" alt=" drinks" />
+        <h3>Cold Drinks</h3>
+        <p>₨60.00</p>
+        <button onclick="payEsewa('drinks', 60)">Buy</button>
+      </div>
+
+      <div class="menu-item icecream">
+        <img src="images/ice-cream.png" alt="Ice Cream" />
+        <h3>Ice Cream</h3>
+        <p>₨80.00</p>
+        <button onclick="payEsewa('Ice Cream', 80)">Buy</button>
+      </div>
+      
+      <div class="menu-item momo">
+        <img src="images/momo.png" alt=" Momo" />
+        <h3>Cold Drinks</h3>
+        <p>₨60.00</p>
+        <button onclick="payEsewa('momo', 60)">Buy</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

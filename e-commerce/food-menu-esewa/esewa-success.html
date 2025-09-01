@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Success</title>
+</head>
+<body>
+  <h1>✅ Payment Successful!</h1>
+  <p>Thank you for your payment via eSewa.</p>
+  <script>
+    // Here you can verify the payment from your backend
+    const params = new URLSearchParams(window.location.search);
+    document.write(`<p>Transaction ID: ${params.get("pid")}</p>`);
+    document.write(`<p>Amount Paid: ₨${params.get("amt")}</p>`);
+  </script>
+</body>
+</html>
